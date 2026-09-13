@@ -14,7 +14,7 @@ This project analyzes the spatial distribution of **Land Surface Temperature (LS
 
 The workflow consists of two major stages:
 
-1. **Geospatial data generation using Google Earth Engine **
+1. **Geospatial data generation using Google Earth Engine**
 2. **Exploratory analysis and spatial machine learning using Python**
 
 The final machine learning model uses **XGBoost regression** to predict LST and is evaluated using spatially separated validation data to reduce overly optimistic performance estimates caused by spatial autocorrelation.
@@ -91,8 +91,8 @@ Spatial Interpretation & Cooling-Priority Screening
 urban-heat-island-lst-xgboost/
 │
 ├── UHI_LST_Spatial_XGBoost.ipynb
-├── GEE_2025.js
-├── GEE_2026.js
+├── GEE_DelhiNCR_UHI_DataGeneration_2025.js
+├── GEE_DelhiNCR_UHI_DataGeneration_2026.js
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -115,11 +115,11 @@ Main Python notebook containing:
 * Residual analysis
 * Cooling-priority screening
 
-**`GEE_2025.js`**
+**`GEE_DelhiNCR_UHI_DataGeneration_2025.js`**
 
 Google Earth Engine script used to generate the **2025 Delhi NCR geospatial dataset**. It performs satellite data preprocessing, environmental feature engineering, spatial morphology calculations, and stratified spatial sampling.
 
-**`GEE_2026.js`**
+**`GEE_DelhiNCR_UHI_DataGeneration_2026.js`**
 
 Google Earth Engine script used to generate the corresponding **2026 Delhi NCR geospatial dataset** using the same overall data-generation workflow.
 
@@ -375,8 +375,8 @@ The project uses data from the following platforms and datasets:
 The complete preprocessing and feature-generation logic is available in:
 
 ```text
-GEE_2025.js
-GEE_2026.js
+GEE_DelhiNCR_UHI_DataGeneration_2025.js
+GEE_DelhiNCR_UHI_DataGeneration_2026.js
 ```
 
 ---
@@ -419,7 +419,7 @@ The GEE scripts are provided for transparency and reproducibility of the data-ge
 To reproduce the datasets:
 
 1. Open the Google Earth Engine Code Editor.
-2. Open `GEE_2025.js` or `GEE_2026.js`.
+2. Open `GEE_DelhiNCR_UHI_DataGeneration_2025.js` or `GEE_DelhiNCR_UHI_DataGeneration_2026.js`.
 3. Define/import the Delhi NCR study-area geometry required by the script.
 4. Run the script.
 5. Review the generated layers and sample collection.
