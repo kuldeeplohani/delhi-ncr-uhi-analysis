@@ -14,7 +14,7 @@ This project analyzes the spatial distribution of **Land Surface Temperature (LS
 
 The workflow consists of two major stages:
 
-1. **Geospatial data generation using Google Earth Engine**
+1. **Geospatial data generation using Google Earth Engine **
 2. **Exploratory analysis and spatial machine learning using Python**
 
 The final machine learning model uses **XGBoost regression** to predict LST and is evaluated using spatially separated validation data to reduce overly optimistic performance estimates caused by spatial autocorrelation.
